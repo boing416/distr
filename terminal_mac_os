@@ -4,3 +4,4 @@ mkdir   //creat folder
 ls -la  //list all with include
 rm      //delete file
 rm -rf <folder> //delete folder
+cd /    -root file system
