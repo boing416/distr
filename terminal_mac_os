@@ -1,1 +1,6 @@
-ls -l - list desc
+man
+ls -l   //list desc
+mkdir   //creat folder
+ls -la  //list all with include
+rm      //delete file
+rm -rf <folder> //delete folder
