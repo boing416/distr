@@ -5,3 +5,11 @@ ls -la  //list all with include
 rm      //delete file
 rm -rf <folder> //delete folder
 cd /    -root file system
+pwd  //where you are
+cat  //preview file
+mv //move
+cp //copy
+touch //The touch utility sets the modification and access times of files.  If any file does
+     not exist, it is created with default permissions.
+clear //clear terminal
+chmod 000 FILE //permissions 
