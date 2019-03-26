@@ -45,6 +45,36 @@ sed //modification on data flow
 cat file.txt | sort | cut -d , -f 1 | sed "s/thomas/Thomas/"     //replace "thomas" to "Thomas" //s - substitute
 "regex" are on "patterns"
 cat file.txt | sort | cut -d , -f 1 | tr "e" "r"                 //tr - change e -> r
+wc  - calculates the number of lines,characters,words
+wc file.txt              //output : 400 405 7446 file.txt           //400-lines,405-words,7446-characters
+wc * //all files in folder
+cat file.txt | grep Thomas | wc -l           // only number of lines
+file file.txt //file info
+ifconfig //info on your network
+bc //calculator
+echo " 1 + 2" | bc //output : 3
+find . - list all files within a directory
+find /usr
+find /usr -name "ls*"    //all files starting by "ls"
+env - all your binaries and scripts, list varibles
+export - create new varible in env
+export LINE=3 // example
+echo $LINE //output 3
+cat file.txt | rev // content reverse
+cat sdfsdfsdf 2>&1 | rev // reverse message error
+cat aazazaz 2> error //write to file "error" // no output
+cat error //output : cat: aazazaz:No such file or directory
+echo "bonjour" > /dev/null
+
+
+
+
+
+
+
+
+
+
 
 
 
