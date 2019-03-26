@@ -1,4 +1,5 @@
-man
+///////////////////day 00 //////////////////////
+man //manual
 ls -l   //list desc
 mkdir   //creat folder
 ls -la  //list all with include
@@ -7,6 +8,7 @@ rm -rf <folder> //delete folder
 cd /    -root file system
 pwd  //where you are
 cat  //preview file
+ctrl+d //exit diplayed
 mv //move
 cp //copy
 touch //The touch utility sets the modification and access times of files.  If any file does
@@ -15,3 +17,35 @@ clear //clear terminal
 chmod 000 FILE //permissions 
 touch -mht 201202112109 "Users/scott/symlink" //change date/time symbol link
 ls -ptrUml - list sort all files,folder by date
+
+////////////////////day 01///////////////////////
+
+echo - is a built-in command that writes its arguments to standart output
+cat -e         //$ at the end of each line
+more less      // display content
+head           //first 10 line that file
+tail           //last 10 line   tail -n 3 file.txt //3 first line
+grep           //display to specify which lines you want // 
+     grep "Murat" file.txt //display all line content "Murat"
+     grep -v "Murat" file.txt //select all lines are those not matching "Murat"
+     grep -i "Murat" file.txt //performs case insensitive matching with "Murat"
+////redirections output//////////
+echo "Murat" > output // "output" file has been created
+echo "Murat" >> output // add content on a new line
+////redirection input ///////////
+cat < file.txt
+cat file.txt | grep "Murat"
+cat file.txt | grep "Murat" | head -n 1 // output 1 line content "Murat"
+cat file.txt | sort                     //sort all by A-Za-z
+cat file.txt | sort | cut -d , -f 1     //retrieve the filds l`ve chosen,and if only want the first fields //first colunm
+cat file.txt | sort | cut -d , -f 1 | cat -e // to display non-printable characters
+cat file.txt | sort | cut -d , -f 1,3  ///sort and display columns 
+cat file.txt | sort | cut -d , -f 1-3  // columns 1 by 3
+sed //modification on data flow
+cat file.txt | sort | cut -d , -f 1 | sed "s/thomas/Thomas/"     //replace "thomas" to "Thomas" //s - substitute
+"regex" are on "patterns"
+cat file.txt | sort | cut -d , -f 1 | tr "e" "r"                 //tr - change e -> r
+
+
+
+
