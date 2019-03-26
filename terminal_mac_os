@@ -13,3 +13,4 @@ touch //The touch utility sets the modification and access times of files.  If a
      not exist, it is created with default permissions.
 clear //clear terminal
 chmod 000 FILE //permissions 
+touch -mht 201202112109 "Users/scott/symlink" //change date/time symbol link
